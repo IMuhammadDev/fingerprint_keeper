@@ -77,11 +77,10 @@ WSGI_APPLICATION = "fingerprint_keeper.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "your_database_name",
-        "USER": "your_database_user",
-        "PASSWORD": "your_database_password",
-        "HOST": "your_database_host",  # Usually 'localhost' in development
-        "PORT": "your_database_port",  # Usually '3306' for MySQL
+        "NAME": "fingerprint_keeper",
+        "HOST": "localhost",
+        "USER": "root",
+        "PASSWORD": "ikrom.may",
     }
 }
 
@@ -126,3 +125,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+TELEGRAM_BOT_TOKEN = "6938009975:AAF05VMDquf7mZWl5GmFUb74mMyXbfb88us"
